@@ -1,0 +1,36 @@
+<svg width="180" height="180" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo sac en papier souriant">
+  <style>
+    :root{
+      --kraft:#E9D7B9;          /* couleur du sac (kraft) */
+      --stroke:#1f2937;         /* trait */
+      --face:#1f2937;           /* sourire/yeux */
+      --shadow:#d9c7a7;         /* ombre légère */
+    }
+    .s{ stroke:var(--stroke); stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+  </style>
+
+  <!-- Ombre au sol -->
+  <ellipse cx="64" cy="112" rx="32" ry="6" fill="var(--shadow)" opacity=".5"></ellipse>
+
+  <!-- Corps du sac -->
+  <path d="M30 28 L98 28 l-8 78H38L30 28Z" fill="var(--kraft)"></path>
+  <!-- Bande repliée en haut -->
+  <path d="M26 28 H102 v10 H26 V28Z" fill="var(--shadow)"></path>
+
+  <!-- Lignes de plis (côtés) -->
+  <path d="M44 38 L38 106" class="s" opacity=".25"></path>
+  <path d="M84 38 L90 106" class="s" opacity=".25"></path>
+
+  <!-- Contour du sac -->
+  <path d="M26 28 H102 M30 28 L38 106 H90 L98 28" class="s"></path>
+
+  <!-- Anses -->
+  <path d="M46 24 C46 16, 62 16, 62 24" class="s"></path>
+  <path d="M66 24 C66 16, 82 16, 82 24" class="s"></path>
+
+  <!-- Visage (yeux + sourire) -->
+  <circle cx="50" cy="62" r="3.5" fill="var(--face)"></circle>
+  <circle cx="78" cy="62" r="3.5" fill="var(--face)"></circle>
+  <path d="M46 74 C54 86, 74 86, 82 74" class="s" stroke="var(--face)"></path>
+
+</svg>

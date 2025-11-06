@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Portfolio – Abdra</title>
+  <meta name="description" content="Portfolio moderne et animé : projets, compétences et contact."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/css/styles.css"/>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="hdr" id="top">
+    <div class="container hdr__in">
+      <a class="brand" href="./assets/2025.pdf" target="_blank" rel="noopener" aria-label="Ouvrir le CV 2025">
+        <img class="brand__logo" src="./assets/img/logo.svg" alt="CV 2025"/>
+        <span class="brand__txt">MON CV</span>
+      </a>
+
+      <button class="nav__toggle" aria-controls="nav" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a class="nav__link" href="#projets">Projets</a>
+        <a class="nav__link" href="#apropos">À propos</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="btn btn--ghost" href="https://github.com/BehindTheBag" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__in">
+        <div class="hero__text">
+          <h1 class="reveal">Salut, moi c'est Abdra</h1>
+          <p class="lead reveal delay-1">Je suis développeur Front-end junior passionné d'informatique et de technologies.</p>
+          <div class="cta reveal delay-2">
+            <a class="btn btn--primary mag" href="#projets">Voir mes projets</a>
+            <a class="btn btn--ghost" href="#contact">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <img class="avatar" src="assets/img/me.jpeg" alt="Photo d’Abdra" loading="lazy"/>
+          <div class="glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <section class="ticker" aria-label="Mots-clés défilants">
+      <div class="container">
+        <div class="ticker__track" aria-hidden="true">
+          <div class="ticker__item"><span>HTML</span></div>
+          <div class="ticker__item"><span>CSS * SASS</span></div>
+          <div class="ticker__item"><span>SEO</span></div>
+          <div class="ticker__item"><span>JavaScript</span></div>
+          <div class="ticker__item"><span>React</span></div>
+          <div class="ticker__item"><span>Redux</span></div>
+          <div class="ticker__item"><span>Responsive</span></div>
+          <div class="ticker__item"><span>Accessibilité</span></div>
+          <div class="ticker__item"><span>HTML</span></div>
+          <div class="ticker__item"><span>CSS * SASS</span></div>
+          <div class="ticker__item"><span>SEO</span></div>
+          <div class="ticker__item"><span>JavaScript</span></div>
+          <div class="ticker__item"><span>React</span></div>
+          <div class="ticker__item"><span>Redux</span></div>
+          <div class="ticker__item"><span>Responsive</span></div>
+          <div class="ticker__item"><span>Accessibilité</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section">
+      <div class="container">
+        <header class="sec__hdr">
+          <h2 class="sec__title reveal">Mes projets</h2>
+          <p class="meta">Voici des projets que j'ai pu réaliser en cours de formation</p>
+        </header>
+
+        <div class="grid projects">
+          <!-- OhMyFood -->
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/projets/ohmyfood.png" alt="OhMyFood"></div>
+            <div class="card__body">
+              <h3>OhMyFood</h3>
+              <p class="desc">Plateforme de réservation de restaurants avec animations.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Sass</span><span class="tag">Responsive</span></div>
+              <div class="actions">
+                <a class="btn btn--ghost" href="https://github.com/BehindTheBag/projet-omf" target="_blank" rel="noopener noreferrer">Code</a>
+                <button class="btn btn--primary js-view-more" data-project="ohmyfood" type="button">Voir plus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sophie Bluel -->
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/projets/sophiebluel.png" alt="Sophie Bluel"></div>
+            <div class="card__body">
+              <h3>Sophie Bluel</h3>
+              <p class="desc">Portfolio d'architecte avec gestion de galerie et système d'upload d'images.</p>
+              <div class="tags"><span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">Modale</span></div>
+              <div class="actions">
+                <a class="btn btn--ghost" href="https://github.com/BehindTheBag/projet-bluel" target="_blank" rel="noopener noreferrer">Code</a>
+                <button class="btn btn--primary js-view-more" data-project="sophie-bluel" type="button">Voir plus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nina Carducci -->
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/projets/NinaCarducci.png" alt="Nina Carducci (SEO)"></div>
+            <div class="card__body">
+              <h3>Nina Carducci</h3>
+              <p class="desc">Optimisation du référencement du site de Nina Carducci.</p>
+              <div class="tags"><span class="tag">SEO</span><span class="tag">Performance</span><span class="tag">Accessibilité</span></div>
+              <div class="actions">
+                <a class="btn btn--ghost" href="https://github.com/BehindTheBag/projet-nina" target="_blank" rel="noopener noreferrer">Code</a>
+                <button class="btn btn--primary js-view-more" data-project="nina-carducci" type="button">Voir plus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kasa -->
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/projets/Kasa.png" alt="Kasa"></div>
+            <div class="card__body">
+              <h3>Kasa</h3>
+              <p class="desc">Application de location immobilière avec React.</p>
+              <div class="tags"><span class="tag">React</span><span class="tag">React Router</span><span class="tag">Components</span></div>
+              <div class="actions">
+                <a class="btn btn--ghost" href="https://github.com/BehindTheBag/projet-kasa" target="_blank" rel="noopener noreferrer">Code</a>
+                <button class="btn btn--primary js-view-more" data-project="kasa" type="button">Voir plus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 724 Events -->
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/projets/724Events.png" alt="724 Events"></div>
+            <div class="card__body">
+              <h3>724 Events</h3>
+              <p class="desc">Débogage d'un site d'une agence d'événementiel.</p>
+              <div class="tags"><span class="tag">Debugging</span><span class="tag">JavaScript</span><span class="tag">Performance</span></div>
+              <div class="actions">
+                <a class="btn btn--ghost" href="https://github.com/BehindTheBag/projet-724" target="_blank" rel="noopener noreferrer">Code</a>
+                <button class="btn btn--primary js-view-more" data-project="724-events" type="button">Voir plus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Argent Bank --> 
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/projets/ArgentBank.png" alt="Argent Bank"></div>
+            <div class="card__body">
+              <h3>Argent Bank</h3>
+              <p class="desc">Plateforme bancaire avec React & Redux.</p>
+              <div class="tags"><span class="tag">React</span><span class="tag">Redux</span><span class="tag">API</span></div>
+              <div class="actions">
+                <a class="btn btn--ghost" href="https://github.com/BehindTheBag/projet-abank" target="_blank" rel="noopener noreferrer">Code</a>
+                <button class="btn btn--primary js-view-more" data-project="argent-bank" type="button">Voir plus</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section alt">
+      <div class="container about">
+
+        <div class="about__card">
+          <h2 class="about__title">À propos</h2>
+
+          <p class="about__lead">
+            Technicien informatique de formation, je me spécialise désormais dans le développement web front-end.
+          </p>
+
+          <p class="about__paragraph">
+            J’aime apprendre en réalisant des projets concrets. <br> Comprendre comment les technologies interagissent
+            et progresser un peu plus à chaque création.
+             <br>
+          </p>
+
+    
+
+           <p class="about__lead">
+           N'hésitez pas à me contacter pour toute collaboration front-end (voir skills)
+          </p>
+
+        </div>
+
+        <!-- Skills -->
+        <div class="about__skills">
+          <div>
+            <h3>Hard skills</h3>
+            <ul>
+              <li>HTML</li><li>CSS/Sass</li><li>JavaScript</li>
+              <li>React / Vite</li><li>Redux Toolkit</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Soft skills & Outils</h3>
+            <ul>
+              <li>Polyvalent</li><li>Curieux</li><li>Patient</li>
+              <li>Git / GitHub</li><li>Figma</li><li>Notion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2 class="reveal">Contact</h2>
+        <div class="panel">
+          <form id="contact-form" class="form" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="nom">Nom</label>
+                <input id="nom" name="nom" type="text" placeholder="Nom" required>
+              </div>
+              <div class="field">
+                <label for="prenom">Prénom</label>
+                <input id="prenom" name="prenom" type="text" placeholder="Prénom" required>
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="field field--full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            </div>
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="ftr">
+    <div class="container ftr__in">
+      <p>© <span id="year"></span> Abdra — Tous droits réservés.</p>
+      <a class="top" href="#top" aria-label="Retour en haut">↑</a>
+    </div>
+  </footer>
+
+  <!-- MODALE -->
+  <div id="project-modal" class="modal" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__panel">
+      <div class="modal__hdr">
+        <h3 id="modal-title" class="modal__title">Titre du projet</h3>
+        <button id="modal-close" class="modal__close icon-close" aria-label="Fermer" type="button"></button>
+      </div>
+      <div id="modal-content" class="modal__body">
+        <div class="gallery">
+          <div class="gallery__main">
+            <img id="gallery-main-img" src="" alt="" class="gallery__image contain">
+            <div class="gallery__nav">
+              <button id="gallery-prev" class="gallery__btn icon-btn icon-btn--prev" aria-label="Précédent" type="button"></button>
+              <button id="gallery-next" class="gallery__btn icon-btn icon-btn--next" aria-label="Suivant" type="button"></button>
+            </div>
+            <div id="gallery-counter" class="gallery__counter">1/3</div>
+          </div>
+          <div id="gallery-thumbs" class="gallery__thumbs"></div>
+        </div>
+
+        <div class="project-info">
+          <div class="project-info__section">
+            <h4>Description</h4>
+            <p id="project-description" class="project-info__desc"></p>
+          </div>
+
+          <div id="section-acquis" class="project-info__section">
+            <h4>Compétences & Acquis</h4>
+            <p id="project-acquis" class="project-info__desc"></p>
+          </div>
+
+          <div class="project-info__section">
+            <h4>Fonctionnalités</h4>
+            <ul id="project-features" class="project-info__features"></ul>
+          </div>
+
+          <div class="project-info__section">
+            <h4>Technologies</h4>
+            <div id="project-technologies" class="project-info__tech"></div>
+          </div>
+
+          <div class="project-info__section project-info__links">
+            <a id="project-code" href="#" target="_blank" rel="noopener" class="btn btn--primary">Voir le code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="./assets/js/main.js" defer></script>
+  <script type="module" src="./assets/js/modal.js" defer></script>
+</body>
+</html>
