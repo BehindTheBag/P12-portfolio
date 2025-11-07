@@ -23,7 +23,7 @@ const projects = {
     features: ['Audit SEO complet', "Optimisation des performances Lighthouse", "Amélioration de l'accessibilité", 'Meta données optimisées'],
     acquis: "Ce projet m’a permis de renforcer mes compétences en optimisation SEO, en accessibilité et en performance. J’ai appris à utiliser les outils d’audit comme Lighthouse, à améliorer le chargement des images et à rendre le code plus sémantique et conforme aux bonnes pratiques.",
     technologies: ['SEO', 'Performance', 'Accessibilité', 'Lighthouse'],
-    images: ['assets/projets/NinaCarducci.png', 'assets/gallery/ninacarducci1.png', 'assets/gallery/ninacarducci2.png'],
+    images: ['assets/gallery/ninacarducci1.png', 'assets/gallery/ninacarducci2.png', 'assets/gallery/ninacarducci3.png'],
     code: 'https://github.com/BehindTheBag/projet-nina/'
   },
   'kasa': {
